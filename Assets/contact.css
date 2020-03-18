@@ -12,6 +12,9 @@ section {
     align-items: center;
 }
 .col-6 {
-    padding: 3%;
+    padding: 5%;
+}
 
+.id {
+    text-align: center;
 }
