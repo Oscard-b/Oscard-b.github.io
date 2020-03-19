@@ -2,12 +2,10 @@
     margin: 0%;
     padding: 0%;
 }
-
 header {
     text-align: center;
     padding-top: 3%;
 }
-
-section {
-    padding: 3%;
+.container {
+    padding-top: 5%;
 }

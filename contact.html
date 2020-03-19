@@ -1,91 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Assets/contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Assets/contact.css">
 </head>
 
 <body>
-    <header class="col-">
-      <h1>Contact</h1>
-    </header>
+  <header class="col-">
+    <h1>Contact</h1>
+  </header>
 
-    <nav class="col-">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link" href="home.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
+  <nav class="col-">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
 
-    <section>
-      <div class="row">
-        <article class="col-6" id="social-media">
-          <p>
-            Insta 
-          </p>
-          <p>
-            Twitter 
-          </p>
-          <p>
-            Facebook 
-          </p>
-          <p>
-            LinkedIn 
-          </p>
-          <p>
-            Email 
-          </p>
-        </article>
-        <article class="col-6" id="form">
-          <form>
-            <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Name</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect2">Phone number (Optional)</label>
-              <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Type your message here</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-          </form>
-        </article>
-      </div>
-    </section>
+  <section class="container">
+    <row class="row">
+
+      <column-email class="col-sm">
+        <form>
+          <prompt class="form-group" id="email-prompt">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" placeholder="name@example.com">
+          </prompt-1>
+
+          <prompt class="form-group" id="name-prompt">
+            <label for="exampleFormControlSelect1">Name</label>
+            <input type="text" class="form-control">
+            </select>
+          </prompt-2>
+
+          <prompt class="form-group" id="number-prompt">
+            <label for="exampleFormControlSelect1">Phone Number (Optional)</label>
+            <input type="text" class="form-control">
+            </select>
+          </prompt>
+
+          <prompt class="form-group" id="text-prompt">
+            <label for="exampleFormControlTextarea1">Type your message here</label>
+            <textarea class="form-control" rows="3"></textarea>
+          </prompt>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </column-email>
+
+      <column-social class="col-sm">
+        <p>
+          oscard_b
+          <img src="./Assets/Images/insta-logo.png">
+        </p>
+        <p>
+          @oscard_b
+          <img src="./Assets/Images/twitter-logo.png">         
+        </p>
+        <p>
+          Oscar Berrones
+          <img src="./Assets/Images/FB-logo.png">
+        </p>
+        <p>
+          Oscar Berrones
+          <img src="./Assets/Images/In-logo.png">
+        </p>
+        <p>
+          odberroness@gmail.com
+          <img src="./Assets/Images/gmail-logo.png">
+        </p>
+      </column-social>
+    </row>
+  </section>
 
 
 
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
